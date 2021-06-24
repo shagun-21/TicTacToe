@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_tic"
+    android:layout_height="match_parent"
+    tools:context=".congratsActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Congratulations!!"
+        android:textStyle="bold"
+        android:textSize="45sp"
+        android:textColor="#F52900"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="200dp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You won the match"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:layout_marginTop="270dp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/celeblottie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="25dp"
+        android:rotation="-64"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/party"
+        tools:ignore="MissingClass" />
+
+
+</RelativeLayout>
